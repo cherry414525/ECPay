@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>POST Request Test</title>
+</head>
+<body>
+
+<h2>POST Request Test</h2>
+
+<form id="ecpayForm" action="http://localhost:8080/ecpayCheckout" method="POST">
+    <label for="merchantTradeNo">Merchant Trade No:</label><br>
+    <input type="text" id="merchantTradeNo" name="merchantTradeNo" value="testCompany0004"><br>
+    <label for="totalAmount">Total Amount:</label><br>
+    <input type="text" id="totalAmount" name="totalAmount" value="50"><br>
+    <label for="tradeDesc">Trade Description:</label><br>
+    <input type="text" id="tradeDesc" name="tradeDesc" value="test Description"><br>
+    <label for="itemName">Item Name:</label><br>
+    <input type="text" id="itemName" name="itemName" value="TestItem"><br>
+    <label for="returnURL">Return URL:</label><br>
+    <input type="text" id="returnURL" name="returnURL" value="http://211.23.128.214:5000"><br>
+    <label for="clientBackURL">Client Back URL:</label><br>
+    <input type="text" id="clientBackURL" name="clientBackURL" value="http://10.100.53.16:8080"><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
